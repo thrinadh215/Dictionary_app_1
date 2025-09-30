@@ -1,0 +1,81 @@
+.home {
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+}
+.search-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box .div_head {
+  font-size: 50px;
+  font-weight: 300;
+  border-bottom: 2px solid #333; 
+  width: fit-content;
+  margin-bottom: 20px;           
+  text-align: center;
+}
+
+.search-box > input {
+ width: 100%;
+  height: 25px;
+  padding: 21px;
+  margin: 12px;       
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.search-box > input:focus {
+  border-color: #333;           
+}
+@media (max-width: 600px) {
+  .search-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-box .div_head {
+  font-size: 30px;
+  font-weight: 300;
+  border-bottom: 2px solid #6c6767; 
+  width: fit-content;
+  margin-bottom: 20px;           
+  text-align: center;
+}
+  .search-box > input {
+    height: 20px;     
+    width: 75%;       /* slightly smaller height */
+    padding: 14px;           /* reduce padding */
+    margin: 8px;             /* less margin */
+    font-size: 18px;         /* reduce font size for small screens */
+    border-radius: 6px;      /* slightly smaller radius */
+  }
+}
+
+.search-box > button {
+  width: auto;
+  height: 65px;
+  padding: 0 30px;             
+  margin-bottom: 12px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.search-box > button:hover {
+  background-color: #555;       
+}

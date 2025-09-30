@@ -1,0 +1,23 @@
+.dict{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.dict >h1{
+    font-size: 50px;
+    font-weight:bold;
+    border-bottom: 2px solid white;
+}
+
+@media (max-width: 600px){
+    .dict >h1{
+    font-size: 30px;
+    font-weight:bold;
+    border-bottom: 2px solid rgb(103, 100, 100);
+}
+
+}
